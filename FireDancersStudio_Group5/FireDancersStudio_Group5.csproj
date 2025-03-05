@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B78F0B34-274E-4353-BBCC-2458DB3C64D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FireDancersStudio_Group5</RootNamespace>
+    <AssemblyName>FireDancersStudio_Group5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Attendance.cs" />
+    <Compile Include="Classes\Contract.cs" />
+    <Compile Include="Classes\Event.cs" />
+    <Compile Include="Classes\MembershipOrder.cs" />
+    <Compile Include="Classes\MembershipPackage.cs" />
+    <Compile Include="Classes\Message.cs" />
+    <Compile Include="Classes\Room.cs" />
+    <Compile Include="Classes\Scheduled.cs" />
+    <Compile Include="Enums\BranchEnum.cs" />
+    <Compile Include="Enums\HealthDeclarationEnum.cs" />
+    <Compile Include="Enums\SourceEnum.cs" />
+    <Compile Include="Forms\Customers forms\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\LoadingPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\LoadingPayment.Designer.cs">
+      <DependentUpon>LoadingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessAttendance.Designer.cs">
+      <DependentUpon>SuccessAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessCustomerRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessCustomerRegistration.Designer.cs">
+      <DependentUpon>SuccessCustomerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessFeedback.Designer.cs">
+      <DependentUpon>SuccessFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessPayment.Designer.cs">
+      <DependentUpon>SuccessPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessRegister.Designer.cs">
+      <DependentUpon>SuccessRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\ChooseLessonToMarkAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\ChooseLessonToMarkAttendance.Designer.cs">
+      <DependentUpon>ChooseLessonToMarkAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\CreateNewMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\CreateNewMessage.Designer.cs">
+      <DependentUpon>CreateNewMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customers forms\ChooseFeedbackDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\ChooseFeedbackDate.Designer.cs">
+      <DependentUpon>ChooseFeedbackDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessSendingMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Finish Screens\SuccessSendingMessage.Designer.cs">
+      <DependentUpon>SuccessSendingMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReadMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReadMessages.Designer.cs">
+      <DependentUpon>ReadMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XYZ_Unused\CreateNewLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XYZ_Unused\CreateNewLesson.Designer.cs">
+      <DependentUpon>CreateNewLesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\createWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\createWorker.Designer.cs">
+      <DependentUpon>createWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DanceStyle.cs" />
+    <Compile Include="Enums\ClassesLimitEnum.cs" />
+    <Compile Include="Enums\CycleEnum.cs" />
+    <Compile Include="Enums\DanceStyleEnum.cs" />
+    <Compile Include="Classes\Feedback.cs" />
+    <Compile Include="Enums\DifficultyEnum.cs" />
+    <Compile Include="Enums\GenderEnum.cs" />
+    <Compile Include="Enums\CustomerEnum.cs" />
+    <Compile Include="Classes\Customer.cs" />
+    <Compile Include="Forms\Customers forms\Feedback_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\Feedback_Screen.Designer.cs">
+      <DependentUpon>Feedback_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\First_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\First_Screen.Designer.cs">
+      <DependentUpon>First_Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\HomePage_Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\HomePage_Administrator.Designer.cs">
+      <DependentUpon>HomePage_Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customers forms\HomePage_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\HomePage_Customer.Designer.cs">
+      <DependentUpon>HomePage_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\ManageWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\ManageWorkers.Designer.cs">
+      <DependentUpon>ManageWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XYZ_Unused\Manage_Lessons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XYZ_Unused\Manage_Lessons.Designer.cs">
+      <DependentUpon>Manage_Lessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customers forms\RegisterToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\RegisterToClass.Designer.cs">
+      <DependentUpon>RegisterToClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignNewCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignNewCustomers.Designer.cs">
+      <DependentUpon>SignNewCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Customers forms\signToLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Customers forms\signToLesson.Designer.cs">
+      <DependentUpon>signToLesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Workers forms\Mark_Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\Mark_Attendance.Designer.cs">
+      <DependentUpon>Mark_Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Workers forms\searchWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Workers forms\searchWorker.Designer.cs">
+      <DependentUpon>searchWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SADM_5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SADM_5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="Classes\StudioClass.cs" />
+    <Compile Include="Classes\Worker.cs" />
+    <Compile Include="Enums\WorkerRoleEnum.cs" />
+    <EmbeddedResource Include="Forms\Customers forms\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\LoadingPayment.resx">
+      <DependentUpon>LoadingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessAttendance.resx">
+      <DependentUpon>SuccessAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessCustomerRegistration.resx">
+      <DependentUpon>SuccessCustomerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessFeedback.resx">
+      <DependentUpon>SuccessFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessPayment.resx">
+      <DependentUpon>SuccessPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessRegister.resx">
+      <DependentUpon>SuccessRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\ChooseLessonToMarkAttendance.resx">
+      <DependentUpon>ChooseLessonToMarkAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\CreateNewMessage.resx">
+      <DependentUpon>CreateNewMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers forms\ChooseFeedbackDate.resx">
+      <DependentUpon>ChooseFeedbackDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Finish Screens\SuccessSendingMessage.resx">
+      <DependentUpon>SuccessSendingMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReadMessages.resx">
+      <DependentUpon>ReadMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XYZ_Unused\CreateNewLesson.resx">
+      <DependentUpon>CreateNewLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\createWorker.resx">
+      <DependentUpon>createWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers forms\Feedback_Screen.resx">
+      <DependentUpon>Feedback_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\First_Screen.resx">
+      <DependentUpon>First_Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\HomePage_Administrator.resx">
+      <DependentUpon>HomePage_Administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers forms\HomePage_Customer.resx">
+      <DependentUpon>HomePage_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\ManageWorkers.resx">
+      <DependentUpon>ManageWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XYZ_Unused\Manage_Lessons.resx">
+      <DependentUpon>Manage_Lessons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers forms\RegisterToClass.resx">
+      <DependentUpon>RegisterToClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignNewCustomers.resx">
+      <DependentUpon>SignNewCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Customers forms\signToLesson.resx">
+      <DependentUpon>signToLesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Workers forms\Mark_Attendance.resx">
+      <DependentUpon>Mark_Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Workers forms\searchWorker.resx">
+      <DependentUpon>searchWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SADM_5DataSet.xsc">
+      <DependentUpon>SADM_5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SADM_5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SADM_5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SADM_5DataSet.xss">
+      <DependentUpon>SADM_5DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
